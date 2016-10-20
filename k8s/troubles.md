@@ -22,3 +22,12 @@ EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 ~~~
+
+### unable to create pod network
+
+~~~
+# kubectl apply -f https://git.io/weave-kube
+Unable to connect to the server: net/http: TLS handshake timeout
+~~~
+
+you need to check the http proxy in root user environment.
