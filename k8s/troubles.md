@@ -31,3 +31,26 @@ Unable to connect to the server: net/http: TLS handshake timeout
 ~~~
 
 you need to check the http proxy in root user environment.
+
+### unable to open kubernetes-dashboard
+
+after install kubernetes-dashboard by `kubectl create -f https://rawgit.com/kubernetes/dashboard/master/src/deploy/kubernetes-dashboard.yaml`, and open http://master-ip/ui in browser, it always return 401 Unauthorized.
+
+you can use `kubectl describe services kubernetes-dashboard --namespace=kube-system` to check the NodePort to access it as a workaround
+
+~~~
+$ kubectl describe services kubernetes-dashboard --namespace=kube-system
+Name:                   kubernetes-dashboard
+Namespace:              kube-system
+Labels:                 app=kubernetes-dashboard
+Selector:               app=kubernetes-dashboard
+Type:                   NodePort
+IP:                     100.73.120.141
+Port:                   <unset> 80/TCP
+NodePort:               <unset> 32098/TCP
+Endpoints:              10.32.0.16:9090
+Session Affinity:       None
+~~~
+
+for this case, you can use http://master-ip:32098 to access kubernetes-dashboard
+ref: [https://github.com/kubernetes/dashboard/issues/692](https://github.com/kubernetes/dashboard/issues/692)
