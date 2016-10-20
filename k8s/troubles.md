@@ -1,5 +1,15 @@
 ### kubeadm init hangs on ubuntu 16.04
 
+~~~
+# kubeadm init
+<master/tokens> generated token: "c0c47b.c7ce7a73cc02bcfc"
+<master/pki> created keys and certificates in "/etc/kubernetes/pki"
+<util/kubeconfig> created "/etc/kubernetes/admin.conf"
+<util/kubeconfig> created "/etc/kubernetes/kubelet.conf"
+<master/apiclient> created API client configuration
+<master/apiclient> created API client, waiting for the control plane to become ready
+~~~
+
 if you're behind a proxy, you will need to set proxy to docker before running `kubeadm init`, [https://docs.docker.com/engine/admin/systemd/#http-proxy](https://docs.docker.com/engine/admin/systemd/#http-proxy):
 
 ~~~
