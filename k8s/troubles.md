@@ -23,6 +23,15 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ~~~
 
+the install steps:
+
+~~~
+apt-get install -y docker.io kubelet kubeadm kubectl kubernetes-cni containerd ubuntu-fan runc
+kubeadm init --api-advertise-addresses=16.187.242.140
+kubectl taint nodes --all dedicated-
+kubectl apply -f https://git.io/weave-kube
+~~~
+
 ### unable to create pod network
 
 ~~~
