@@ -63,3 +63,22 @@ Session Affinity:       None
 
 for this case, you can use http://master-ip:32098 to access kubernetes-dashboard
 ref: [https://github.com/kubernetes/dashboard/issues/692](https://github.com/kubernetes/dashboard/issues/692)
+
+### unable to open heapster grafana ui
+
+after
+
+~~~
+# use canal network
+kubectl apply -f https://raw.githubusercontent.com/tigera/canal/master/k8s-install/kubeadm/canal.yaml
+git clone https://github.com/kubernetes/heapster
+cd heapster
+kubectl create -f deploy/kube-config/influxdb/
+~~~
+
+grafana is not available, even with NodePort
+
+* remove GF_SERVER_ROOT_URL doesn't work [https://github.com/kubernetes/heapster/issues/1316](https://github.com/kubernetes/heapster/issues/1316)
+* use canal network doesn't work [http://stackoverflow.com/questions/37993263/grafana-not-showing-in-kubernetes-heapster](http://stackoverflow.com/questions/37993263/grafana-not-showing-in-kubernetes-heapster)
+* make addons false doesn't work [http://stackoverflow.com/questions/38354962/kubernetes-keeps-removing-heapster-grafana-services-due-to-already-used-nodepo](http://stackoverflow.com/questions/38354962/kubernetes-keeps-removing-heapster-grafana-services-due-to-already-used-nodepo)
+* specify protocol doesn't work [http://stackoverflow.com/questions/33767736/kubernetes-endpoints-throw-serviceunavailable](http://stackoverflow.com/questions/33767736/kubernetes-endpoints-throw-serviceunavailable)
