@@ -76,9 +76,11 @@ cd heapster
 kubectl create -f deploy/kube-config/influxdb/
 ~~~
 
-grafana is not available, even with NodePort
+grafana is not available, even with NodePort. Access http://localhost:8080/api/v1/proxy/namespaces/kube-system/services/monitoring-grafana will fail with 503 error code: "no endpoints available for service \"monitoring-grafana\"".
 
 * remove GF_SERVER_ROOT_URL doesn't work [https://github.com/kubernetes/heapster/issues/1316](https://github.com/kubernetes/heapster/issues/1316)
 * use canal network doesn't work [http://stackoverflow.com/questions/37993263/grafana-not-showing-in-kubernetes-heapster](http://stackoverflow.com/questions/37993263/grafana-not-showing-in-kubernetes-heapster)
 * make addons false doesn't work [http://stackoverflow.com/questions/38354962/kubernetes-keeps-removing-heapster-grafana-services-due-to-already-used-nodepo](http://stackoverflow.com/questions/38354962/kubernetes-keeps-removing-heapster-grafana-services-due-to-already-used-nodepo)
 * specify protocol doesn't work [http://stackoverflow.com/questions/33767736/kubernetes-endpoints-throw-serviceunavailable](http://stackoverflow.com/questions/33767736/kubernetes-endpoints-throw-serviceunavailable)
+
+**solution**: checkout heapster v1.2.0 and modify deploy/kube-config/influxdb/grafana-service.yaml, specify spec type to NodePort, then recreate heapster application
