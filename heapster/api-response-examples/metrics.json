@@ -1,0 +1,527 @@
+# HELP etcd_helper_cache_entry_count Counter of etcd helper cache entries. This can be different from etcd_helper_cache_miss_count because two concurrent threads can miss the cache and generate the same entry twice.
+# TYPE etcd_helper_cache_entry_count counter
+etcd_helper_cache_entry_count 0
+# HELP etcd_helper_cache_hit_count Counter of etcd helper cache hits.
+# TYPE etcd_helper_cache_hit_count counter
+etcd_helper_cache_hit_count 0
+# HELP etcd_helper_cache_miss_count Counter of etcd helper cache miss.
+# TYPE etcd_helper_cache_miss_count counter
+etcd_helper_cache_miss_count 0
+# HELP etcd_request_cache_add_latencies_summary Latency in microseconds of adding an object to etcd cache
+# TYPE etcd_request_cache_add_latencies_summary summary
+etcd_request_cache_add_latencies_summary{quantile="0.5"} NaN
+etcd_request_cache_add_latencies_summary{quantile="0.9"} NaN
+etcd_request_cache_add_latencies_summary{quantile="0.99"} NaN
+etcd_request_cache_add_latencies_summary_sum 0
+etcd_request_cache_add_latencies_summary_count 0
+# HELP etcd_request_cache_get_latencies_summary Latency in microseconds of getting an object from etcd cache
+# TYPE etcd_request_cache_get_latencies_summary summary
+etcd_request_cache_get_latencies_summary{quantile="0.5"} NaN
+etcd_request_cache_get_latencies_summary{quantile="0.9"} NaN
+etcd_request_cache_get_latencies_summary{quantile="0.99"} NaN
+etcd_request_cache_get_latencies_summary_sum 0
+etcd_request_cache_get_latencies_summary_count 0
+# HELP get_token_count Counter of total Token() requests to the alternate token source
+# TYPE get_token_count counter
+get_token_count 0
+# HELP get_token_fail_count Counter of failed Token() requests to the alternate token source
+# TYPE get_token_fail_count counter
+get_token_fail_count 0
+# HELP go_gc_duration_seconds A summary of the GC invocation durations.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 0.000352325
+go_gc_duration_seconds{quantile="0.25"} 0.00042161600000000004
+go_gc_duration_seconds{quantile="0.5"} 0.00044229100000000004
+go_gc_duration_seconds{quantile="0.75"} 0.000482779
+go_gc_duration_seconds{quantile="1"} 0.002036126
+go_gc_duration_seconds_sum 0.974977394
+go_gc_duration_seconds_count 2117
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 104
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 1.5896128e+07
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 2.133013052e+10
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.654575e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 2.49727873e+08
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 956416
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 1.5896128e+07
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 8.84736e+06
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 1.818624e+07
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 90137
+# HELP go_memstats_heap_released_bytes_total Total number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes_total counter
+go_memstats_heap_released_bytes_total 0
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 2.70336e+07
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.477593905068807e+19
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 168
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 2.4981801e+08
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 14400
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 197520
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 245760
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 2.2578285e+07
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 2.953673e+06
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 1.277952e+06
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 1.277952e+06
+# HELP go_memstats_sys_bytes Number of bytes obtained by system. Sum of all system allocations.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 3.413836e+07
+# HELP heapster_exporter_duration_microseconds Time spent exporting data to sink in microseconds.
+# TYPE heapster_exporter_duration_microseconds summary
+heapster_exporter_duration_microseconds{exporter="InfluxDB Sink",quantile="0.5"} 3.277
+heapster_exporter_duration_microseconds{exporter="InfluxDB Sink",quantile="0.9"} 4.752
+heapster_exporter_duration_microseconds{exporter="InfluxDB Sink",quantile="0.99"} 4.752
+heapster_exporter_duration_microseconds_sum{exporter="InfluxDB Sink"} 15051.263000000032
+heapster_exporter_duration_microseconds_count{exporter="InfluxDB Sink"} 2711
+heapster_exporter_duration_microseconds{exporter="Metric Sink",quantile="0.5"} 2.745
+heapster_exporter_duration_microseconds{exporter="Metric Sink",quantile="0.9"} 4.096
+heapster_exporter_duration_microseconds{exporter="Metric Sink",quantile="0.99"} 4.096
+heapster_exporter_duration_microseconds_sum{exporter="Metric Sink"} 8971.53300000001
+heapster_exporter_duration_microseconds_count{exporter="Metric Sink"} 2711
+# HELP heapster_exporter_last_time_seconds Last time Heapster exported data since unix epoch in seconds.
+# TYPE heapster_exporter_last_time_seconds gauge
+heapster_exporter_last_time_seconds{exporter="InfluxDB Sink"} 1.477593905e+09
+heapster_exporter_last_time_seconds{exporter="Metric Sink"} 1.477593905e+09
+# HELP heapster_kubelet_request_duration_microseconds The Kubelet request latencies in microseconds.
+# TYPE heapster_kubelet_request_duration_microseconds summary
+heapster_kubelet_request_duration_microseconds{node="bjws",quantile="0.5"} 1203
+heapster_kubelet_request_duration_microseconds{node="bjws",quantile="0.9"} 1683
+heapster_kubelet_request_duration_microseconds{node="bjws",quantile="0.99"} 1683
+heapster_kubelet_request_duration_microseconds_sum{node="bjws"} 4.008875e+06
+heapster_kubelet_request_duration_microseconds_count{node="bjws"} 2711
+# HELP heapster_processor_duration_microseconds The Time spent in a processor in microseconds.
+# TYPE heapster_processor_duration_microseconds summary
+heapster_processor_duration_microseconds{processor="cluster_aggregator",quantile="0.5"} 0.827
+heapster_processor_duration_microseconds{processor="cluster_aggregator",quantile="0.9"} 1.097
+heapster_processor_duration_microseconds{processor="cluster_aggregator",quantile="0.99"} 1.097
+heapster_processor_duration_microseconds_sum{processor="cluster_aggregator"} 3038.3179999999975
+heapster_processor_duration_microseconds_count{processor="cluster_aggregator"} 2711
+heapster_processor_duration_microseconds{processor="namespace_aggregator",quantile="0.5"} 0.975
+heapster_processor_duration_microseconds{processor="namespace_aggregator",quantile="0.9"} 1.283
+heapster_processor_duration_microseconds{processor="namespace_aggregator",quantile="0.99"} 1.283
+heapster_processor_duration_microseconds_sum{processor="namespace_aggregator"} 3262.6809999999955
+heapster_processor_duration_microseconds_count{processor="namespace_aggregator"} 2711
+heapster_processor_duration_microseconds{processor="namespace_based_enricher",quantile="0.5"} 1.165
+heapster_processor_duration_microseconds{processor="namespace_based_enricher",quantile="0.9"} 1.636
+heapster_processor_duration_microseconds{processor="namespace_based_enricher",quantile="0.99"} 1.636
+heapster_processor_duration_microseconds_sum{processor="namespace_based_enricher"} 4311.310999999997
+heapster_processor_duration_microseconds_count{processor="namespace_based_enricher"} 2711
+heapster_processor_duration_microseconds{processor="node_aggregator",quantile="0.5"} 0.757
+heapster_processor_duration_microseconds{processor="node_aggregator",quantile="0.9"} 1.022
+heapster_processor_duration_microseconds{processor="node_aggregator",quantile="0.99"} 1.022
+heapster_processor_duration_microseconds_sum{processor="node_aggregator"} 2906.9889999999964
+heapster_processor_duration_microseconds_count{processor="node_aggregator"} 2711
+heapster_processor_duration_microseconds{processor="node_autoscaling_enricher",quantile="0.5"} 0.904
+heapster_processor_duration_microseconds{processor="node_autoscaling_enricher",quantile="0.9"} 1.306
+heapster_processor_duration_microseconds{processor="node_autoscaling_enricher",quantile="0.99"} 1.306
+heapster_processor_duration_microseconds_sum{processor="node_autoscaling_enricher"} 3113.0610000000024
+heapster_processor_duration_microseconds_count{processor="node_autoscaling_enricher"} 2711
+heapster_processor_duration_microseconds{processor="pod_aggregator",quantile="0.5"} 0.855
+heapster_processor_duration_microseconds{processor="pod_aggregator",quantile="0.9"} 1.049
+heapster_processor_duration_microseconds{processor="pod_aggregator",quantile="0.99"} 1.049
+heapster_processor_duration_microseconds_sum{processor="pod_aggregator"} 2946.337999999998
+heapster_processor_duration_microseconds_count{processor="pod_aggregator"} 2711
+heapster_processor_duration_microseconds{processor="pod_based_enricher",quantile="0.5"} 1.353
+heapster_processor_duration_microseconds{processor="pod_based_enricher",quantile="0.9"} 1.784
+heapster_processor_duration_microseconds{processor="pod_based_enricher",quantile="0.99"} 1.784
+heapster_processor_duration_microseconds_sum{processor="pod_based_enricher"} 5067.82100000001
+heapster_processor_duration_microseconds_count{processor="pod_based_enricher"} 2711
+heapster_processor_duration_microseconds{processor="rate calculator",quantile="0.5"} 3.915
+heapster_processor_duration_microseconds{processor="rate calculator",quantile="0.9"} 4.474
+heapster_processor_duration_microseconds{processor="rate calculator",quantile="0.99"} 4.474
+heapster_processor_duration_microseconds_sum{processor="rate calculator"} 11952.458999999973
+heapster_processor_duration_microseconds_count{processor="rate calculator"} 2711
+# HELP heapster_scraper_duration_microseconds Time spent scraping sources in microseconds.
+# TYPE heapster_scraper_duration_microseconds summary
+heapster_scraper_duration_microseconds{source="kubelet:16.187.242.140:10255",quantile="0.5"} 8.536
+heapster_scraper_duration_microseconds{source="kubelet:16.187.242.140:10255",quantile="0.9"} 9.701
+heapster_scraper_duration_microseconds{source="kubelet:16.187.242.140:10255",quantile="0.99"} 9.701
+heapster_scraper_duration_microseconds_sum{source="kubelet:16.187.242.140:10255"} 26764.370999999952
+heapster_scraper_duration_microseconds_count{source="kubelet:16.187.242.140:10255"} 2711
+# HELP heapster_scraper_last_time_seconds Last time Heapster performed a scrape since unix epoch in seconds.
+# TYPE heapster_scraper_last_time_seconds gauge
+heapster_scraper_last_time_seconds{source="kubelet:16.187.242.140:10255"} 1.477593905e+09
+# HELP http_request_duration_microseconds The HTTP request latencies in microseconds.
+# TYPE http_request_duration_microseconds summary
+http_request_duration_microseconds{handler="availableClusterMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="availableClusterMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="availableClusterMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="availableClusterMetrics"} 678.708
+http_request_duration_microseconds_count{handler="availableClusterMetrics"} 2
+http_request_duration_microseconds{handler="availableContainerMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="availableContainerMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="availableContainerMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="availableContainerMetrics"} 3711.931
+http_request_duration_microseconds_count{handler="availableContainerMetrics"} 2
+http_request_duration_microseconds{handler="availableMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="availableMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="availableMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="availableMetrics"} 0
+http_request_duration_microseconds_count{handler="availableMetrics"} 0
+http_request_duration_microseconds{handler="availableNamespaceMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="availableNamespaceMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="availableNamespaceMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="availableNamespaceMetrics"} 433.034
+http_request_duration_microseconds_count{handler="availableNamespaceMetrics"} 1
+http_request_duration_microseconds{handler="availableNodeMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="availableNodeMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="availableNodeMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="availableNodeMetrics"} 848.057
+http_request_duration_microseconds_count{handler="availableNodeMetrics"} 1
+http_request_duration_microseconds{handler="availablePodMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="availablePodMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="availablePodMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="availablePodMetrics"} 445.151
+http_request_duration_microseconds_count{handler="availablePodMetrics"} 3
+http_request_duration_microseconds{handler="clusterMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="clusterMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="clusterMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="clusterMetrics"} 0
+http_request_duration_microseconds_count{handler="clusterMetrics"} 0
+http_request_duration_microseconds{handler="debugAllKeys",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="debugAllKeys",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="debugAllKeys",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="debugAllKeys"} 0
+http_request_duration_microseconds_count{handler="debugAllKeys"} 0
+http_request_duration_microseconds{handler="freeContainerMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="freeContainerMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="freeContainerMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="freeContainerMetrics"} 0
+http_request_duration_microseconds_count{handler="freeContainerMetrics"} 0
+http_request_duration_microseconds{handler="namespaceList",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="namespaceList",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="namespaceList",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="namespaceList"} 633.805
+http_request_duration_microseconds_count{handler="namespaceList"} 2
+http_request_duration_microseconds{handler="namespaceMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="namespaceMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="namespaceMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="namespaceMetrics"} 0
+http_request_duration_microseconds_count{handler="namespaceMetrics"} 0
+http_request_duration_microseconds{handler="namespacePodList",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="namespacePodList",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="namespacePodList",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="namespacePodList"} 1013.334
+http_request_duration_microseconds_count{handler="namespacePodList"} 2
+http_request_duration_microseconds{handler="nodeList",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="nodeList",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="nodeList",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="nodeList"} 464.149
+http_request_duration_microseconds_count{handler="nodeList"} 1
+http_request_duration_microseconds{handler="nodeMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="nodeMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="nodeMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="nodeMetrics"} 0
+http_request_duration_microseconds_count{handler="nodeMetrics"} 0
+http_request_duration_microseconds{handler="podContainerMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="podContainerMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="podContainerMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="podContainerMetrics"} 4293.946
+http_request_duration_microseconds_count{handler="podContainerMetrics"} 6
+http_request_duration_microseconds{handler="podListMetric",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="podListMetric",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="podListMetric",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="podListMetric"} 0
+http_request_duration_microseconds_count{handler="podListMetric"} 0
+http_request_duration_microseconds{handler="podMetrics",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="podMetrics",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="podMetrics",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="podMetrics"} 0
+http_request_duration_microseconds_count{handler="podMetrics"} 0
+http_request_duration_microseconds{handler="pprof",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="pprof",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="pprof",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="pprof"} 0
+http_request_duration_microseconds_count{handler="pprof"} 0
+http_request_duration_microseconds{handler="prometheus",quantile="0.5"} 9972.146
+http_request_duration_microseconds{handler="prometheus",quantile="0.9"} 9972.146
+http_request_duration_microseconds{handler="prometheus",quantile="0.99"} 9972.146
+http_request_duration_microseconds_sum{handler="prometheus"} 9972.146
+http_request_duration_microseconds_count{handler="prometheus"} 1
+http_request_duration_microseconds{handler="systemContainerList",quantile="0.5"} NaN
+http_request_duration_microseconds{handler="systemContainerList",quantile="0.9"} NaN
+http_request_duration_microseconds{handler="systemContainerList",quantile="0.99"} NaN
+http_request_duration_microseconds_sum{handler="systemContainerList"} 0
+http_request_duration_microseconds_count{handler="systemContainerList"} 0
+# HELP http_request_size_bytes The HTTP request sizes in bytes.
+# TYPE http_request_size_bytes summary
+http_request_size_bytes{handler="availableClusterMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="availableClusterMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="availableClusterMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="availableClusterMetrics"} 376
+http_request_size_bytes_count{handler="availableClusterMetrics"} 2
+http_request_size_bytes{handler="availableContainerMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="availableContainerMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="availableContainerMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="availableContainerMetrics"} 656
+http_request_size_bytes_count{handler="availableContainerMetrics"} 2
+http_request_size_bytes{handler="availableMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="availableMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="availableMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="availableMetrics"} 0
+http_request_size_bytes_count{handler="availableMetrics"} 0
+http_request_size_bytes{handler="availableNamespaceMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="availableNamespaceMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="availableNamespaceMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="availableNamespaceMetrics"} 234
+http_request_size_bytes_count{handler="availableNamespaceMetrics"} 1
+http_request_size_bytes{handler="availableNodeMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="availableNodeMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="availableNodeMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="availableNodeMetrics"} 210
+http_request_size_bytes_count{handler="availableNodeMetrics"} 1
+http_request_size_bytes{handler="availablePodMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="availablePodMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="availablePodMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="availablePodMetrics"} 1033
+http_request_size_bytes_count{handler="availablePodMetrics"} 3
+http_request_size_bytes{handler="clusterMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="clusterMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="clusterMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="clusterMetrics"} 0
+http_request_size_bytes_count{handler="clusterMetrics"} 0
+http_request_size_bytes{handler="debugAllKeys",quantile="0.5"} NaN
+http_request_size_bytes{handler="debugAllKeys",quantile="0.9"} NaN
+http_request_size_bytes{handler="debugAllKeys",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="debugAllKeys"} 0
+http_request_size_bytes_count{handler="debugAllKeys"} 0
+http_request_size_bytes{handler="freeContainerMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="freeContainerMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="freeContainerMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="freeContainerMetrics"} 0
+http_request_size_bytes_count{handler="freeContainerMetrics"} 0
+http_request_size_bytes{handler="namespaceList",quantile="0.5"} NaN
+http_request_size_bytes{handler="namespaceList",quantile="0.9"} NaN
+http_request_size_bytes{handler="namespaceList",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="namespaceList"} 577
+http_request_size_bytes_count{handler="namespaceList"} 2
+http_request_size_bytes{handler="namespaceMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="namespaceMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="namespaceMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="namespaceMetrics"} 0
+http_request_size_bytes_count{handler="namespaceMetrics"} 0
+http_request_size_bytes{handler="namespacePodList",quantile="0.5"} NaN
+http_request_size_bytes{handler="namespacePodList",quantile="0.9"} NaN
+http_request_size_bytes{handler="namespacePodList",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="namespacePodList"} 645
+http_request_size_bytes_count{handler="namespacePodList"} 2
+http_request_size_bytes{handler="nodeList",quantile="0.5"} NaN
+http_request_size_bytes{handler="nodeList",quantile="0.9"} NaN
+http_request_size_bytes{handler="nodeList",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="nodeList"} 184
+http_request_size_bytes_count{handler="nodeList"} 1
+http_request_size_bytes{handler="nodeMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="nodeMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="nodeMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="nodeMetrics"} 0
+http_request_size_bytes_count{handler="nodeMetrics"} 0
+http_request_size_bytes{handler="podContainerMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="podContainerMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="podContainerMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="podContainerMetrics"} 2104
+http_request_size_bytes_count{handler="podContainerMetrics"} 6
+http_request_size_bytes{handler="podListMetric",quantile="0.5"} NaN
+http_request_size_bytes{handler="podListMetric",quantile="0.9"} NaN
+http_request_size_bytes{handler="podListMetric",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="podListMetric"} 0
+http_request_size_bytes_count{handler="podListMetric"} 0
+http_request_size_bytes{handler="podMetrics",quantile="0.5"} NaN
+http_request_size_bytes{handler="podMetrics",quantile="0.9"} NaN
+http_request_size_bytes{handler="podMetrics",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="podMetrics"} 0
+http_request_size_bytes_count{handler="podMetrics"} 0
+http_request_size_bytes{handler="pprof",quantile="0.5"} NaN
+http_request_size_bytes{handler="pprof",quantile="0.9"} NaN
+http_request_size_bytes{handler="pprof",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="pprof"} 0
+http_request_size_bytes_count{handler="pprof"} 0
+http_request_size_bytes{handler="prometheus",quantile="0.5"} 162
+http_request_size_bytes{handler="prometheus",quantile="0.9"} 162
+http_request_size_bytes{handler="prometheus",quantile="0.99"} 162
+http_request_size_bytes_sum{handler="prometheus"} 162
+http_request_size_bytes_count{handler="prometheus"} 1
+http_request_size_bytes{handler="systemContainerList",quantile="0.5"} NaN
+http_request_size_bytes{handler="systemContainerList",quantile="0.9"} NaN
+http_request_size_bytes{handler="systemContainerList",quantile="0.99"} NaN
+http_request_size_bytes_sum{handler="systemContainerList"} 0
+http_request_size_bytes_count{handler="systemContainerList"} 0
+# HELP http_requests_total Total number of HTTP requests made.
+# TYPE http_requests_total counter
+http_requests_total{code="200",handler="availableClusterMetrics",method="get"} 2
+http_requests_total{code="200",handler="availableContainerMetrics",method="get"} 2
+http_requests_total{code="200",handler="availableNamespaceMetrics",method="get"} 1
+http_requests_total{code="200",handler="availableNodeMetrics",method="get"} 1
+http_requests_total{code="200",handler="availablePodMetrics",method="get"} 3
+http_requests_total{code="200",handler="namespaceList",method="get"} 2
+http_requests_total{code="200",handler="namespacePodList",method="get"} 2
+http_requests_total{code="200",handler="nodeList",method="get"} 1
+http_requests_total{code="200",handler="podContainerMetrics",method="get"} 6
+http_requests_total{code="200",handler="prometheus",method="get"} 1
+# HELP http_response_size_bytes The HTTP response sizes in bytes.
+# TYPE http_response_size_bytes summary
+http_response_size_bytes{handler="availableClusterMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="availableClusterMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="availableClusterMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="availableClusterMetrics"} 222
+http_response_size_bytes_count{handler="availableClusterMetrics"} 2
+http_response_size_bytes{handler="availableContainerMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="availableContainerMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="availableContainerMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="availableContainerMetrics"} 560
+http_response_size_bytes_count{handler="availableContainerMetrics"} 2
+http_response_size_bytes{handler="availableMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="availableMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="availableMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="availableMetrics"} 0
+http_response_size_bytes_count{handler="availableMetrics"} 0
+http_response_size_bytes{handler="availableNamespaceMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="availableNamespaceMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="availableNamespaceMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="availableNamespaceMetrics"} 111
+http_response_size_bytes_count{handler="availableNamespaceMetrics"} 1
+http_response_size_bytes{handler="availableNodeMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="availableNodeMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="availableNodeMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="availableNodeMetrics"} 670
+http_response_size_bytes_count{handler="availableNodeMetrics"} 1
+http_response_size_bytes{handler="availablePodMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="availablePodMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="availablePodMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="availablePodMetrics"} 1368
+http_response_size_bytes_count{handler="availablePodMetrics"} 3
+http_response_size_bytes{handler="clusterMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="clusterMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="clusterMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="clusterMetrics"} 0
+http_response_size_bytes_count{handler="clusterMetrics"} 0
+http_response_size_bytes{handler="debugAllKeys",quantile="0.5"} NaN
+http_response_size_bytes{handler="debugAllKeys",quantile="0.9"} NaN
+http_response_size_bytes{handler="debugAllKeys",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="debugAllKeys"} 0
+http_response_size_bytes_count{handler="debugAllKeys"} 0
+http_response_size_bytes{handler="freeContainerMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="freeContainerMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="freeContainerMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="freeContainerMetrics"} 0
+http_response_size_bytes_count{handler="freeContainerMetrics"} 0
+http_response_size_bytes{handler="namespaceList",quantile="0.5"} NaN
+http_response_size_bytes{handler="namespaceList",quantile="0.9"} NaN
+http_response_size_bytes{handler="namespaceList",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="namespaceList"} 40
+http_response_size_bytes_count{handler="namespaceList"} 2
+http_response_size_bytes{handler="namespaceMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="namespaceMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="namespaceMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="namespaceMetrics"} 0
+http_response_size_bytes_count{handler="namespaceMetrics"} 0
+http_response_size_bytes{handler="namespacePodList",quantile="0.5"} NaN
+http_response_size_bytes{handler="namespacePodList",quantile="0.9"} NaN
+http_response_size_bytes{handler="namespacePodList",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="namespacePodList"} 650
+http_response_size_bytes_count{handler="namespacePodList"} 2
+http_response_size_bytes{handler="nodeList",quantile="0.5"} NaN
+http_response_size_bytes{handler="nodeList",quantile="0.9"} NaN
+http_response_size_bytes{handler="nodeList",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="nodeList"} 13
+http_response_size_bytes_count{handler="nodeList"} 1
+http_response_size_bytes{handler="nodeMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="nodeMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="nodeMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="nodeMetrics"} 0
+http_response_size_bytes_count{handler="nodeMetrics"} 0
+http_response_size_bytes{handler="podContainerMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="podContainerMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="podContainerMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="podContainerMetrics"} 3498
+http_response_size_bytes_count{handler="podContainerMetrics"} 6
+http_response_size_bytes{handler="podListMetric",quantile="0.5"} NaN
+http_response_size_bytes{handler="podListMetric",quantile="0.9"} NaN
+http_response_size_bytes{handler="podListMetric",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="podListMetric"} 0
+http_response_size_bytes_count{handler="podListMetric"} 0
+http_response_size_bytes{handler="podMetrics",quantile="0.5"} NaN
+http_response_size_bytes{handler="podMetrics",quantile="0.9"} NaN
+http_response_size_bytes{handler="podMetrics",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="podMetrics"} 0
+http_response_size_bytes_count{handler="podMetrics"} 0
+http_response_size_bytes{handler="pprof",quantile="0.5"} NaN
+http_response_size_bytes{handler="pprof",quantile="0.9"} NaN
+http_response_size_bytes{handler="pprof",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="pprof"} 0
+http_response_size_bytes_count{handler="pprof"} 0
+http_response_size_bytes{handler="prometheus",quantile="0.5"} 3982
+http_response_size_bytes{handler="prometheus",quantile="0.9"} 3982
+http_response_size_bytes{handler="prometheus",quantile="0.99"} 3982
+http_response_size_bytes_sum{handler="prometheus"} 3982
+http_response_size_bytes_count{handler="prometheus"} 1
+http_response_size_bytes{handler="systemContainerList",quantile="0.5"} NaN
+http_response_size_bytes{handler="systemContainerList",quantile="0.9"} NaN
+http_response_size_bytes{handler="systemContainerList",quantile="0.99"} NaN
+http_response_size_bytes_sum{handler="systemContainerList"} 0
+http_response_size_bytes_count{handler="systemContainerList"} 0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 302.17
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 65536
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 10
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 7.7135872e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch in seconds.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds 1.47743116126e+09
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 1.17284864e+08
+# HELP ssh_tunnel_open_count Counter of ssh tunnel total open attempts
+# TYPE ssh_tunnel_open_count counter
+ssh_tunnel_open_count 0
+# HELP ssh_tunnel_open_fail_count Counter of ssh tunnel failed open attempts
+# TYPE ssh_tunnel_open_fail_count counter
+ssh_tunnel_open_fail_count 0

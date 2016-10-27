@@ -1,0 +1,166 @@
+{
+  "metrics": [
+   {
+    "name": "uptime",
+    "description": "Number of milliseconds since the container was started",
+    "type": "cumulative",
+    "value_type": "int64",
+    "units": "ms"
+   },
+   {
+    "name": "cpu/usage",
+    "description": "Cumulative CPU usage on all cores",
+    "type": "cumulative",
+    "value_type": "int64",
+    "units": "ns"
+   },
+   {
+    "name": "memory/usage",
+    "description": "Total memory usage",
+    "type": "gauge",
+    "value_type": "int64",
+    "units": "bytes"
+   },
+   {
+    "name": "memory/working_set",
+    "description": "Total working set usage. Working set is the memory being used and not easily dropped by the kernel",
+    "type": "gauge",
+    "value_type": "int64",
+    "units": "bytes"
+   },
+   {
+    "name": "memory/page_faults",
+    "description": "Number of page faults",
+    "type": "cumulative",
+    "value_type": "int64"
+   },
+   {
+    "name": "memory/major_page_faults",
+    "description": "Number of major page faults",
+    "type": "cumulative",
+    "value_type": "int64"
+   },
+   {
+    "name": "network/rx",
+    "description": "Cumulative number of bytes received over the network",
+    "type": "cumulative",
+    "value_type": "int64",
+    "units": "bytes"
+   },
+   {
+    "name": "network/rx_errors",
+    "description": "Cumulative number of errors while receiving over the network",
+    "type": "cumulative",
+    "value_type": "int64"
+   },
+   {
+    "name": "network/tx",
+    "description": "Cumulative number of bytes sent over the network",
+    "type": "cumulative",
+    "value_type": "int64",
+    "units": "bytes"
+   },
+   {
+    "name": "network/tx_errors",
+    "description": "Cumulative number of errors while sending over the network",
+    "type": "cumulative",
+    "value_type": "int64"
+   },
+   {
+    "name": "cpu/limit",
+    "description": "CPU hard limit in millicores.",
+    "type": "gauge",
+    "value_type": "int64"
+   },
+   {
+    "name": "memory/limit",
+    "description": "Memory hard limit in bytes.",
+    "type": "gauge",
+    "value_type": "int64",
+    "units": "bytes"
+   },
+   {
+    "name": "filesystem/usage",
+    "description": "Total number of bytes consumed on a filesystem",
+    "labels": [
+     {
+      "key": "resource_id",
+      "description": "Identifier(s) specific to a metric"
+     }
+    ],
+    "type": "gauge",
+    "value_type": "int64",
+    "units": "bytes"
+   },
+   {
+    "name": "filesystem/limit",
+    "description": "The total size of filesystem in bytes",
+    "labels": [
+     {
+      "key": "resource_id",
+      "description": "Identifier(s) specific to a metric"
+     }
+    ],
+    "type": "gauge",
+    "value_type": "int64",
+    "units": "bytes"
+   },
+   {
+    "name": "filesystem/available",
+    "description": "The number of available bytes remaining in a the filesystem",
+    "labels": [
+     {
+      "key": "resource_id",
+      "description": "Identifier(s) specific to a metric"
+     }
+    ],
+    "type": "gauge",
+    "value_type": "int64",
+    "units": "bytes"
+   }
+  ],
+  "common_labels": [
+   {
+    "key": "nodename",
+    "description": "nodename where the container ran"
+   },
+   {
+    "key": "hostname",
+    "description": "Hostname where the container ran"
+   },
+   {
+    "key": "host_id",
+    "description": "Identifier specific to a host. Set by cloud provider or user"
+   },
+   {
+    "key": "container_name",
+    "description": "User-provided name of the container or full container name for system containers"
+   },
+   {
+    "key": "container_base_image",
+    "description": "User-defined image name that is run inside the container"
+   }
+  ],
+  "pod_labels": [
+   {
+    "key": "pod_name",
+    "description": "The name of the pod"
+   },
+   {
+    "key": "pod_id",
+    "description": "The unique ID of the pod"
+   },
+   {
+    "key": "pod_namespace",
+    "description": "The namespace of the pod"
+   },
+   {
+    "key": "namespace_id",
+    "description": "The UID of namespace of the pod"
+   },
+   {
+    "key": "labels",
+    "description": "Comma-separated list of user-provided labels"
+   }
+  ]
+ }

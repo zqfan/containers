@@ -1,0 +1,173 @@
+[
+    {
+        "labels": {
+            "container_name": "system.slice/kmod-static-nodes.service",
+            "host_id": "bjws",
+            "hostname": "bjws",
+            "nodename": "bjws"
+        },
+        "metrics": {
+            "cpu/usage": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T04:35:15.430808084+08:00",
+                    "value": 0
+                }
+            ],
+            "memory/major_page_faults": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T04:35:15.430808084+08:00",
+                    "value": 0
+                }
+            ],
+            "memory/page_faults": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T04:35:15.430808084+08:00",
+                    "value": 0
+                }
+            ],
+            "memory/usage": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-27T18:26:00Z",
+                    "value": 0
+                }
+            ],
+            "memory/working_set": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-27T18:26:00Z",
+                    "value": 0
+                }
+            ],
+            "uptime": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T04:35:15.430808084+08:00",
+                    "value": 165049656
+                }
+            ]
+        }
+    },
+    {
+        "labels": {
+            "container_name": "/pod",
+            "host_id": "bjws",
+            "hostname": "bjws",
+            "labels": "k8s-app:canal-node",
+            "namespace_id": "d57bfdc3-9af8-11e6-9191-5065f323a286",
+            "nodename": "bjws",
+            "pod_id": "e8983880-9af8-11e6-9191-5065f323a286",
+            "pod_name": "canal-node-ii4ku",
+            "pod_namespace": "kube-system"
+        },
+        "metrics": {
+            "cpu/limit": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-27T18:26:00Z",
+                    "value": 0
+                }
+            ],
+            "cpu/usage": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T05:25:15.046785954+08:00",
+                    "value": 0
+                }
+            ],
+            "filesystem/limit": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "labels": {
+                        "resource_id": "/dev/mapper/ubuntu--vg-root"
+                    },
+                    "start": "2016-10-27T18:26:00Z",
+                    "value": 457603694592
+                }
+            ],
+            "filesystem/usage": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "labels": {
+                        "resource_id": "/dev/mapper/ubuntu--vg-root"
+                    },
+                    "start": "2016-10-27T18:26:00Z",
+                    "value": 36864
+                }
+            ],
+            "memory/limit": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-27T18:26:00Z",
+                    "value": 0
+                }
+            ],
+            "memory/major_page_faults": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T05:25:15.046785954+08:00",
+                    "value": 0
+                }
+            ],
+            "memory/page_faults": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T05:25:15.046785954+08:00",
+                    "value": 0
+                }
+            ],
+            "memory/usage": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-27T18:26:00Z",
+                    "value": 99651584
+                }
+            ],
+            "memory/working_set": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-27T18:26:00Z",
+                    "value": 81817600
+                }
+            ],
+            "network/rx": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T05:25:15.046785954+08:00",
+                    "value": 0
+                }
+            ],
+            "network/rx_errors": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T05:25:15.046785954+08:00",
+                    "value": 0
+                }
+            ],
+            "network/tx": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T05:25:15.046785954+08:00",
+                    "value": 0
+                }
+            ],
+            "network/tx_errors": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T05:25:15.046785954+08:00",
+                    "value": 0
+                }
+            ],
+            "uptime": [
+                {
+                    "end": "2016-10-27T18:26:00Z",
+                    "start": "2016-10-26T05:25:15.046785954+08:00",
+                    "value": 162050040
+                }
+            ]
+        }
+    }
+]
