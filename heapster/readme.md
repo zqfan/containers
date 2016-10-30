@@ -1,3 +1,8 @@
+# Table of Contents
+
+* [API](#api)
+* [Metrics](#metrics)
+
 # API
 
 version v1.2.0
@@ -104,3 +109,104 @@ not available:
   * end
   * labels
 
+# Metrics
+
+## cluster level metrics
+
+curl http://localhost:8080/api/v1/proxy/namespaces/kube-system/services/heapster/api/v1/model/metrics
+
+* cpu/limit 
+* cpu/request
+* cpu/usage_rate
+* memory/limit
+* memory/request
+* memory/usage
+
+## node level metrics
+
+curl http://localhost:8080/api/v1/proxy/namespaces/kube-system/services/heapster/api/v1/model/nodes/bjws/metrics
+
+* cpu/limit
+* cpu/node_allocatable
+* cpu/node_capacity
+* cpu/node_reservation
+* cpu/node_utilization
+* cpu/request
+* cpu/usage
+* cpu/usage_rate
+* memory/limit
+* memory/major_page_faults
+* memory/major_page_faults_rate
+* memory/node_allocatable
+* memory/node_capacity
+* memory/node_reservation
+* memory/node_utilization
+* memory/page_faults
+* memory/page_faults_rate
+* memory/request
+* memory/usage
+* memory/working_set
+* network/rx
+* network/rx_errors
+* network/rx_errors_rate
+* network/rx_rate
+* network/tx
+* network/tx_errors
+* network/tx_errors_rate
+* network/tx_rate
+* uptime
+
+## namespace level metrics
+
+curl http://localhost:8080/api/v1/proxy/namespaces/kube-system/services/heapster/api/v1/model/namespaces/kube-system/metrics
+
+* cpu/limit 
+* cpu/request
+* cpu/usage_rate
+* memory/limit
+* memory/request
+* memory/usage
+
+## pod level metrics
+
+curl http://localhost:8080/api/v1/proxy/namespaces/kube-system/services/heapster/api/v1/model/namespaces/kube-system/pods/influxdb-grafana-jriug/metrics
+
+* cpu/limit
+* cpu/request
+* cpu/usage
+* cpu/usage_rate
+* memory/limit
+* memory/major_page_faults
+* memory/major_page_faults_rate
+* memory/page_faults
+* memory/page_faults_rate
+* memory/request
+* memory/usage
+* memory/working_set
+* network/rx
+* network/rx_errors
+* network/rx_errors_rate
+* network/rx_rate
+* network/tx
+* network/tx_errors
+* network/tx_errors_rate
+* network/tx_rate
+* uptime
+
+## container level metrics
+
+curl http://localhost:8080/api/v1/proxy/namespaces/kube-system/services/heapster/api/v1/model/namespaces/kube-system/pods/influxdb-grafana-jriug/containers/grafana/metrics
+
+* cpu/limit
+* cpu/request
+* cpu/usage
+* cpu/usage_rate
+* memory/limit
+* memory/major_page_faults
+* memory/major_page_faults_rate
+* memory/page_faults
+* memory/page_faults_rate
+* memory/request
+* memory/usage
+* memory/working_set
+* uptime
