@@ -34,3 +34,22 @@ solution:
 vagrant plugin uninstall vagrant-libvirt
 vagrant plugin install vagrant-libvrit --plugin-version "<0.0.36"
 ~~~
+
+## biosdevname No such file or directory
+
+~~~
+==> master: Configuring and enabling network interfaces...
+The following SSH command responded with a non-zero exit status.
+Vagrant assumes that this means the command failed!
+
+/usr/sbin/biosdevname --policy=all_ethN -i bash: /usr/sbin/biosdevname: No such file or directory
+
+Stdout from the command:
+
+bash: /usr/sbin/biosdevname: No such file or directory
+
+
+Stderr from the command:
+~~~
+
+solution: comment ``config.ssh.pty = true`` in Vagrantfile
