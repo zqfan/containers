@@ -1,0 +1,12 @@
+{
+  "metadata": {
+   "name": "kubernetes-node-1",
+   "creationTimestamp": "2016-11-08T15:39:16Z"
+  },
+  "timestamp": "2016-11-08T15:39:00Z",
+  "window": "1m0s",
+  "usage": {
+   "cpu": "134m",
+   "memory": "1740468Ki"
+  }
+ }

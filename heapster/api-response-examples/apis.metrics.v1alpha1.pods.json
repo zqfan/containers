@@ -1,0 +1,137 @@
+{
+  "metadata": {},
+  "items": [
+   {
+    "metadata": {
+     "name": "kube-dns-v19-vqoqf",
+     "namespace": "kube-system",
+     "creationTimestamp": "2016-11-08T15:42:54Z"
+    },
+    "timestamp": "2016-11-08T15:42:00Z",
+    "window": "1m0s",
+    "containers": [
+     {
+      "name": "kubedns",
+      "usage": {
+       "cpu": "1m",
+       "memory": "5944Ki"
+      }
+     },
+     {
+      "name": "dnsmasq",
+      "usage": {
+       "cpu": "0",
+       "memory": "204Ki"
+      }
+     },
+     {
+      "name": "healthz",
+      "usage": {
+       "cpu": "3m",
+       "memory": "2312Ki"
+      }
+     }
+    ]
+   },
+   {
+    "metadata": {
+     "name": "kube-proxy-kubernetes-node-1",
+     "namespace": "kube-system",
+     "creationTimestamp": "2016-11-08T15:42:54Z"
+    },
+    "timestamp": "2016-11-08T15:42:00Z",
+    "window": "1m0s",
+    "containers": [
+     {
+      "name": "kube-proxy",
+      "usage": {
+       "cpu": "43m",
+       "memory": "8076Ki"
+      }
+     }
+    ]
+   },
+   {
+    "metadata": {
+     "name": "kubernetes-dashboard-v1.4.0-fdsn3",
+     "namespace": "kube-system",
+     "creationTimestamp": "2016-11-08T15:42:54Z"
+    },
+    "timestamp": "2016-11-08T15:42:00Z",
+    "window": "1m0s",
+    "containers": [
+     {
+      "name": "kubernetes-dashboard",
+      "usage": {
+       "cpu": "0",
+       "memory": "11384Ki"
+      }
+     }
+    ]
+   },
+   {
+    "metadata": {
+     "name": "monitoring-influxdb-grafana-v4-g8u8x",
+     "namespace": "kube-system",
+     "creationTimestamp": "2016-11-08T15:42:54Z"
+    },
+    "timestamp": "2016-11-08T15:42:00Z",
+    "window": "1m0s",
+    "containers": [
+     {
+      "name": "influxdb",
+      "usage": {
+       "cpu": "2m",
+       "memory": "31292Ki"
+      }
+     },
+     {
+      "name": "grafana",
+      "usage": {
+       "cpu": "0",
+       "memory": "6712Ki"
+      }
+     }
+    ]
+   },
+   {
+    "metadata": {
+     "name": "heapster-v1.2.0-2582472167-f5eiz",
+     "namespace": "kube-system",
+     "creationTimestamp": "2016-11-08T15:42:54Z"
+    },
+    "timestamp": "2016-11-08T15:42:00Z",
+    "window": "1m0s",
+    "containers": [
+     {
+      "name": "heapster",
+      "usage": {
+       "cpu": "0",
+       "memory": "17400Ki"
+      }
+     },
+     {
+      "name": "eventer",
+      "usage": {
+       "cpu": "0",
+       "memory": "4572Ki"
+      }
+     },
+     {
+      "name": "heapster-nanny",
+      "usage": {
+       "cpu": "0",
+       "memory": "5348Ki"
+      }
+     },
+     {
+      "name": "eventer-nanny",
+      "usage": {
+       "cpu": "0",
+       "memory": "5476Ki"
+      }
+     }
+    ]
+   }
+  ]
+ }

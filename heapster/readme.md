@@ -27,7 +27,8 @@ version v1.2.0
   * start
   * end
   * labels
-* /metrics : ?
+* /healthz : Return wheather heapster api is running well.
+* /metrics : ? something related to prometheus
 
 k8s only:
 
@@ -54,9 +55,20 @@ k8s only:
   * end
   * labels
 
-Note: no container list api
+Note: no container list API, this is limited by kubernetes client.
 
-not available:
+APIs are registered and available but not recommended to use, they are v1alpha1, use v1 instead
+
+* /apis/metrics/v1alpha1/nodes : Get a list of metrics for all available nodes.
+  * labelSelector: A selector to restrict the list of returned objects by their labels. Defaults to everything.
+* /apis/metrics/v1alpha1/nodes/{node-name}/ : Get a list of all available metrics for the specified node.
+* /apis/metrics/v1alpha1/pods : Get metrics for all available pods.
+* /apis/metrics/v1alpha1/namespaces/{namespace-name}/pods/ : Get a list of metrics for all available pods in the specified namespace.
+  * labelSelector
+* /apis/metrics/v1alpha1/namespaces/{namespace-name}/pods/{pod-name} : Get metrics for the specified pod in the specified namespace.
+
+
+not available by default, you need to specify a historical source to enable it:
 
 * /api/v1/historical/pod-id/{pod-id}/metrics/{metric-name:*} : Export some pod-level metric aggregations
   * start
