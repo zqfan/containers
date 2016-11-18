@@ -1,0 +1,32 @@
+{
+  "buckets": [
+   {
+    "timestamp": "2016-11-10T00:00:00.000000001Z",
+    "count": 354,
+    "average": {
+     "floatValue": 129.25706481933594
+    },
+    "maximum": {
+     "intValue": 142
+    },
+    "minimum": {
+     "intValue": 116
+    },
+    "median": {
+     "intValue": 129
+    },
+    "percentiles": {
+     "50": {
+      "intValue": 129
+     },
+     "95": {
+      "intValue": 137
+     },
+     "99": {
+      "intValue": 140
+     }
+    }
+   }
+  ],
+  "bucketSize": 0
+ }

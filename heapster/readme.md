@@ -12,7 +12,7 @@ version v1.2.0
 * /api/v1/model/debug/allkeys : Get keys of all metric sets available
 * /api/v1/model/metrics : Get a list of all available metrics for the Cluster entity
 * /api/v1/model/metrics/{metric-name:*} : Export an aggregated cluster-level metric
-  * start: Start time for requested metric
+  * start: Start time for requested metric, rfc 3399 format, such as 2016-11-10T06:00:00Z or 2016-11-10T06:00:00-07:00
   * end: End time for requested metric
   * labels: A comma-separated list of key:values pairs to use to search for a labeled metric
 * /api/v1/model/nodes : Get a list of all nodes that have some current metrics
@@ -68,7 +68,7 @@ APIs are registered and available but not recommended to use, they are v1alpha1,
 * /apis/metrics/v1alpha1/namespaces/{namespace-name}/pods/{pod-name} : Get metrics for the specified pod in the specified namespace.
 
 
-not available by default, you need to specify a historical source to enable it:
+not available by default, you need to specify a historical source to enable them, historical_source should be one of sink uri:
 
 * /api/v1/historical/pod-id/{pod-id}/metrics/{metric-name:*} : Export some pod-level metric aggregations
   * start
