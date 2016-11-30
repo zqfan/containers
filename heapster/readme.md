@@ -7,6 +7,8 @@
 
 version v1.2.0
 
+Note that APIs can only return metric data in latest 15min, while persistent storage holds older data.
+
 * /api/v1/metric-export : Exports the latest point for all Heapster metrics
 * /api/v1/metric-export-schema : Schema for metrics exported by heapster
 * /api/v1/model/debug/allkeys : Get keys of all metric sets available
