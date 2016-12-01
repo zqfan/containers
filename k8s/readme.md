@@ -1,5 +1,3 @@
-cadvisor is installed by default, node port is 4194 by default.
-
 # REF
 
 * https://www.datadoghq.com/blog/monitoring-kubernetes-era/
