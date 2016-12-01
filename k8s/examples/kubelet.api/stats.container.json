@@ -1,0 +1,1386 @@
+{
+  "/": {
+    "stats": [
+      {
+        "task_stats": {
+          "nr_io_wait": 0,
+          "nr_uninterruptible": 0,
+          "nr_stopped": 0,
+          "nr_running": 0,
+          "nr_sleeping": 0
+        },
+        "filesystem": [
+          {
+            "weighted_io_time": 0,
+            "io_time": 0,
+            "io_in_progress": 0,
+            "write_time": 0,
+            "inodes": 2621440,
+            "has_inodes": true,
+            "available": 30299152384,
+            "base_usage": 0,
+            "usage": 9677139968,
+            "capacity": 42140499968,
+            "type": "vfs",
+            "device": "/dev/vda1",
+            "inodes_free": 2471883,
+            "reads_completed": 0,
+            "reads_merged": 0,
+            "sectors_read": 0,
+            "read_time": 0,
+            "writes_completed": 0,
+            "writes_merged": 0,
+            "sectors_written": 0
+          }
+        ],
+        "network": {
+          "tcp6": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "tcp": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "interfaces": [
+            {
+              "tx_dropped": 0,
+              "name": "eth0",
+              "rx_bytes": 1573009721,
+              "rx_packets": 898342,
+              "rx_errors": 0,
+              "rx_dropped": 4,
+              "tx_bytes": 12654081,
+              "tx_packets": 167992,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "flannel0",
+              "rx_bytes": 2831653,
+              "rx_packets": 53733,
+              "rx_errors": 0,
+              "rx_dropped": 0,
+              "tx_bytes": 2830948,
+              "tx_packets": 53689,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "eth1",
+              "rx_bytes": 7801926862,
+              "rx_packets": 6514595,
+              "rx_errors": 0,
+              "rx_dropped": 233,
+              "tx_bytes": 1271330643,
+              "tx_packets": 6348858,
+              "tx_errors": 0
+            }
+          ],
+          "tx_dropped": 0,
+          "name": "eth0",
+          "rx_bytes": 1573009721,
+          "rx_packets": 898342,
+          "rx_errors": 0,
+          "rx_dropped": 4,
+          "tx_bytes": 12654081,
+          "tx_packets": 167992,
+          "tx_errors": 0
+        },
+        "memory": {
+          "hierarchical_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913023
+          },
+          "container_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913023
+          },
+          "failcnt": 0,
+          "working_set": 2040586240,
+          "swap": 0,
+          "rss": 21000192,
+          "cache": 319488000,
+          "usage": 3337252864
+        },
+        "diskio": {
+          "io_serviced": [
+            {
+              "stats": {
+                "Write": 15704547,
+                "Total": 15733304,
+                "Sync": 4388266,
+                "Read": 28757,
+                "Async": 11345038
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ],
+          "io_service_bytes": [
+            {
+              "stats": {
+                "Write": 84328095744,
+                "Total": 84645151744,
+                "Sync": 18004799488,
+                "Read": 317056000,
+                "Async": 66640352256
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ]
+        },
+        "cpu": {
+          "load_average": 0,
+          "cfs": {
+            "throttled_time": 0,
+            "throttled_periods": 0,
+            "periods": 0
+          },
+          "usage": {
+            "system": 1.0122431e+14,
+            "user": 7.471131e+13,
+            "per_cpu_usage": [
+              52475789119215,
+              49940374886205,
+              51223006524959,
+              49886632217218
+            ],
+            "total": 203525802747597
+          }
+        },
+        "timestamp": "2016-11-24T15:01:55.168732159Z"
+      },
+      {
+        "task_stats": {
+          "nr_io_wait": 0,
+          "nr_uninterruptible": 0,
+          "nr_stopped": 0,
+          "nr_running": 0,
+          "nr_sleeping": 0
+        },
+        "filesystem": [
+          {
+            "weighted_io_time": 0,
+            "io_time": 0,
+            "io_in_progress": 0,
+            "write_time": 0,
+            "inodes": 2621440,
+            "has_inodes": true,
+            "available": 30299123712,
+            "base_usage": 0,
+            "usage": 9677168640,
+            "capacity": 42140499968,
+            "type": "vfs",
+            "device": "/dev/vda1",
+            "inodes_free": 2471883,
+            "reads_completed": 0,
+            "reads_merged": 0,
+            "sectors_read": 0,
+            "read_time": 0,
+            "writes_completed": 0,
+            "writes_merged": 0,
+            "sectors_written": 0
+          }
+        ],
+        "network": {
+          "tcp6": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "tcp": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "interfaces": [
+            {
+              "tx_dropped": 0,
+              "name": "eth0",
+              "rx_bytes": 1573010085,
+              "rx_packets": 898349,
+              "rx_errors": 0,
+              "rx_dropped": 4,
+              "tx_bytes": 12654081,
+              "tx_packets": 167992,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "flannel0",
+              "rx_bytes": 2831705,
+              "rx_packets": 53734,
+              "rx_errors": 0,
+              "rx_dropped": 0,
+              "tx_bytes": 2831000,
+              "tx_packets": 53690,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "eth1",
+              "rx_bytes": 7802030142,
+              "rx_packets": 6514668,
+              "rx_errors": 0,
+              "rx_dropped": 233,
+              "tx_bytes": 1271347291,
+              "tx_packets": 6348931,
+              "tx_errors": 0
+            }
+          ],
+          "tx_dropped": 0,
+          "name": "eth0",
+          "rx_bytes": 1573010085,
+          "rx_packets": 898349,
+          "rx_errors": 0,
+          "rx_dropped": 4,
+          "tx_bytes": 12654081,
+          "tx_packets": 167992,
+          "tx_errors": 0
+        },
+        "memory": {
+          "hierarchical_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913023
+          },
+          "container_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913023
+          },
+          "failcnt": 0,
+          "working_set": 2040414208,
+          "swap": 0,
+          "rss": 21000192,
+          "cache": 319488000,
+          "usage": 3337089024
+        },
+        "diskio": {
+          "io_serviced": [
+            {
+              "stats": {
+                "Write": 15704624,
+                "Total": 15733381,
+                "Sync": 4388315,
+                "Read": 28757,
+                "Async": 11345066
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ],
+          "io_service_bytes": [
+            {
+              "stats": {
+                "Write": 84328431616,
+                "Total": 84645487616,
+                "Sync": 18005000192,
+                "Read": 317056000,
+                "Async": 66640487424
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ]
+        },
+        "cpu": {
+          "load_average": 0,
+          "cfs": {
+            "throttled_time": 0,
+            "throttled_periods": 0,
+            "periods": 0
+          },
+          "usage": {
+            "system": 1.0122539e+14,
+            "user": 7.471209e+13,
+            "per_cpu_usage": [
+              52476211207595,
+              49940859765987,
+              51223538726141,
+              49887319028196
+            ],
+            "total": 203527928727919
+          }
+        },
+        "timestamp": "2016-11-24T15:02:08.729809279Z"
+      },
+      {
+        "task_stats": {
+          "nr_io_wait": 0,
+          "nr_uninterruptible": 0,
+          "nr_stopped": 0,
+          "nr_running": 0,
+          "nr_sleeping": 0
+        },
+        "filesystem": [
+          {
+            "weighted_io_time": 0,
+            "io_time": 0,
+            "io_in_progress": 0,
+            "write_time": 0,
+            "inodes": 2621440,
+            "has_inodes": true,
+            "available": 30299111424,
+            "base_usage": 0,
+            "usage": 9677180928,
+            "capacity": 42140499968,
+            "type": "vfs",
+            "device": "/dev/vda1",
+            "inodes_free": 2471883,
+            "reads_completed": 0,
+            "reads_merged": 0,
+            "sectors_read": 0,
+            "read_time": 0,
+            "writes_completed": 0,
+            "writes_merged": 0,
+            "sectors_written": 0
+          }
+        ],
+        "network": {
+          "tcp6": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "tcp": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "interfaces": [
+            {
+              "tx_dropped": 0,
+              "name": "eth0",
+              "rx_bytes": 1573010345,
+              "rx_packets": 898354,
+              "rx_errors": 0,
+              "rx_dropped": 4,
+              "tx_bytes": 12654081,
+              "tx_packets": 167992,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "flannel0",
+              "rx_bytes": 2831705,
+              "rx_packets": 53734,
+              "rx_errors": 0,
+              "rx_dropped": 0,
+              "tx_bytes": 2831000,
+              "tx_packets": 53690,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "eth1",
+              "rx_bytes": 7802087488,
+              "rx_packets": 6514715,
+              "rx_errors": 0,
+              "rx_dropped": 233,
+              "tx_bytes": 1271356006,
+              "tx_packets": 6348976,
+              "tx_errors": 0
+            }
+          ],
+          "tx_dropped": 0,
+          "name": "eth0",
+          "rx_bytes": 1573010345,
+          "rx_packets": 898354,
+          "rx_errors": 0,
+          "rx_dropped": 4,
+          "tx_bytes": 12654081,
+          "tx_packets": 167992,
+          "tx_errors": 0
+        },
+        "memory": {
+          "hierarchical_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913026
+          },
+          "container_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913026
+          },
+          "failcnt": 0,
+          "working_set": 2040406016,
+          "swap": 0,
+          "rss": 21000192,
+          "cache": 319488000,
+          "usage": 3337084928
+        },
+        "diskio": {
+          "io_serviced": [
+            {
+              "stats": {
+                "Write": 15704936,
+                "Total": 15733693,
+                "Sync": 4388337,
+                "Read": 28757,
+                "Async": 11345356
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ],
+          "io_service_bytes": [
+            {
+              "stats": {
+                "Write": 84330029056,
+                "Total": 84647085056,
+                "Sync": 18005090304,
+                "Read": 317056000,
+                "Async": 66641994752
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ]
+        },
+        "cpu": {
+          "load_average": 0,
+          "cfs": {
+            "throttled_time": 0,
+            "throttled_periods": 0,
+            "periods": 0
+          },
+          "usage": {
+            "system": 1.0122614e+14,
+            "user": 7.47127e+13,
+            "per_cpu_usage": [
+              52476713448811,
+              49941283344190,
+              51223747248746,
+              49887753421075
+            ],
+            "total": 203529497462822
+          }
+        },
+        "timestamp": "2016-11-24T15:02:20.392110986Z"
+      },
+      {
+        "task_stats": {
+          "nr_io_wait": 0,
+          "nr_uninterruptible": 0,
+          "nr_stopped": 0,
+          "nr_running": 0,
+          "nr_sleeping": 0
+        },
+        "filesystem": [
+          {
+            "weighted_io_time": 0,
+            "io_time": 0,
+            "io_in_progress": 0,
+            "write_time": 0,
+            "inodes": 2621440,
+            "has_inodes": true,
+            "available": 30299090944,
+            "base_usage": 0,
+            "usage": 9677201408,
+            "capacity": 42140499968,
+            "type": "vfs",
+            "device": "/dev/vda1",
+            "inodes_free": 2471883,
+            "reads_completed": 0,
+            "reads_merged": 0,
+            "sectors_read": 0,
+            "read_time": 0,
+            "writes_completed": 0,
+            "writes_merged": 0,
+            "sectors_written": 0
+          }
+        ],
+        "network": {
+          "tcp6": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "tcp": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "interfaces": [
+            {
+              "tx_dropped": 0,
+              "name": "eth0",
+              "rx_bytes": 1573010761,
+              "rx_packets": 898362,
+              "rx_errors": 0,
+              "rx_dropped": 4,
+              "tx_bytes": 12654081,
+              "tx_packets": 167992,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "flannel0",
+              "rx_bytes": 2831757,
+              "rx_packets": 53735,
+              "rx_errors": 0,
+              "rx_dropped": 0,
+              "tx_bytes": 2831052,
+              "tx_packets": 53691,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "eth1",
+              "rx_bytes": 7802191930,
+              "rx_packets": 6514797,
+              "rx_errors": 0,
+              "rx_dropped": 233,
+              "tx_bytes": 1271372357,
+              "tx_packets": 6349057,
+              "tx_errors": 0
+            }
+          ],
+          "tx_dropped": 0,
+          "name": "eth0",
+          "rx_bytes": 1573010761,
+          "rx_packets": 898362,
+          "rx_errors": 0,
+          "rx_dropped": 4,
+          "tx_bytes": 12654081,
+          "tx_packets": 167992,
+          "tx_errors": 0
+        },
+        "memory": {
+          "hierarchical_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913027
+          },
+          "container_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913027
+          },
+          "failcnt": 0,
+          "working_set": 2040369152,
+          "swap": 0,
+          "rss": 21000192,
+          "cache": 319488000,
+          "usage": 3337060352
+        },
+        "diskio": {
+          "io_serviced": [
+            {
+              "stats": {
+                "Write": 15704998,
+                "Total": 15733755,
+                "Sync": 4388397,
+                "Read": 28757,
+                "Async": 11345358
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ],
+          "io_service_bytes": [
+            {
+              "stats": {
+                "Write": 84330287104,
+                "Total": 84647343104,
+                "Sync": 18005336064,
+                "Read": 317056000,
+                "Async": 66642007040
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ]
+        },
+        "cpu": {
+          "load_average": 0,
+          "cfs": {
+            "throttled_time": 0,
+            "throttled_periods": 0,
+            "periods": 0
+          },
+          "usage": {
+            "system": 1.0122715e+14,
+            "user": 7.471375e+13,
+            "per_cpu_usage": [
+              52477249948477,
+              49941894054823,
+              51224293041974,
+              49888418972513
+            ],
+            "total": 203531856017787
+          }
+        },
+        "timestamp": "2016-11-24T15:02:36.463066114Z"
+      },
+      {
+        "task_stats": {
+          "nr_io_wait": 0,
+          "nr_uninterruptible": 0,
+          "nr_stopped": 0,
+          "nr_running": 0,
+          "nr_sleeping": 0
+        },
+        "filesystem": [
+          {
+            "weighted_io_time": 0,
+            "io_time": 0,
+            "io_in_progress": 0,
+            "write_time": 0,
+            "inodes": 2621440,
+            "has_inodes": true,
+            "available": 30299078656,
+            "base_usage": 0,
+            "usage": 9677213696,
+            "capacity": 42140499968,
+            "type": "vfs",
+            "device": "/dev/vda1",
+            "inodes_free": 2471883,
+            "reads_completed": 0,
+            "reads_merged": 0,
+            "sectors_read": 0,
+            "read_time": 0,
+            "writes_completed": 0,
+            "writes_merged": 0,
+            "sectors_written": 0
+          }
+        ],
+        "network": {
+          "tcp6": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "tcp": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "interfaces": [
+            {
+              "tx_dropped": 0,
+              "name": "eth0",
+              "rx_bytes": 1573011229,
+              "rx_packets": 898371,
+              "rx_errors": 0,
+              "rx_dropped": 4,
+              "tx_bytes": 12654081,
+              "tx_packets": 167992,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "flannel0",
+              "rx_bytes": 2831757,
+              "rx_packets": 53735,
+              "rx_errors": 0,
+              "rx_dropped": 0,
+              "tx_bytes": 2831052,
+              "tx_packets": 53691,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "eth1",
+              "rx_bytes": 7802261016,
+              "rx_packets": 6514863,
+              "rx_errors": 0,
+              "rx_dropped": 233,
+              "tx_bytes": 1271383257,
+              "tx_packets": 6349118,
+              "tx_errors": 0
+            }
+          ],
+          "tx_dropped": 0,
+          "name": "eth0",
+          "rx_bytes": 1573011229,
+          "rx_packets": 898371,
+          "rx_errors": 0,
+          "rx_dropped": 4,
+          "tx_bytes": 12654081,
+          "tx_packets": 167992,
+          "tx_errors": 0
+        },
+        "memory": {
+          "hierarchical_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913029
+          },
+          "container_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913029
+          },
+          "failcnt": 0,
+          "working_set": 2040459264,
+          "swap": 0,
+          "rss": 21000192,
+          "cache": 319488000,
+          "usage": 3337138176
+        },
+        "diskio": {
+          "io_serviced": [
+            {
+              "stats": {
+                "Write": 15705309,
+                "Total": 15734066,
+                "Sync": 4388439,
+                "Read": 28757,
+                "Async": 11345627
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ],
+          "io_service_bytes": [
+            {
+              "stats": {
+                "Write": 84331843584,
+                "Total": 84648899584,
+                "Sync": 18005508096,
+                "Read": 317056000,
+                "Async": 66643391488
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ]
+        },
+        "cpu": {
+          "load_average": 0,
+          "cfs": {
+            "throttled_time": 0,
+            "throttled_periods": 0,
+            "periods": 0
+          },
+          "usage": {
+            "system": 1.0122858e+14,
+            "user": 7.471461e+13,
+            "per_cpu_usage": [
+              52477850760292,
+              49942515012659,
+              51224853436122,
+              49889245828774
+            ],
+            "total": 203534465037847
+          }
+        },
+        "timestamp": "2016-11-24T15:02:53.15754181Z"
+      },
+      {
+        "task_stats": {
+          "nr_io_wait": 0,
+          "nr_uninterruptible": 0,
+          "nr_stopped": 0,
+          "nr_running": 0,
+          "nr_sleeping": 0
+        },
+        "filesystem": [
+          {
+            "weighted_io_time": 0,
+            "io_time": 0,
+            "io_in_progress": 0,
+            "write_time": 0,
+            "inodes": 2621440,
+            "has_inodes": true,
+            "available": 30299074560,
+            "base_usage": 0,
+            "usage": 9677217792,
+            "capacity": 42140499968,
+            "type": "vfs",
+            "device": "/dev/vda1",
+            "inodes_free": 2471883,
+            "reads_completed": 0,
+            "reads_merged": 0,
+            "sectors_read": 0,
+            "read_time": 0,
+            "writes_completed": 0,
+            "writes_merged": 0,
+            "sectors_written": 0
+          }
+        ],
+        "network": {
+          "tcp6": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "tcp": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "interfaces": [
+            {
+              "tx_dropped": 0,
+              "name": "eth0",
+              "rx_bytes": 1573011489,
+              "rx_packets": 898376,
+              "rx_errors": 0,
+              "rx_dropped": 4,
+              "tx_bytes": 12654081,
+              "tx_packets": 167992,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "flannel0",
+              "rx_bytes": 2831809,
+              "rx_packets": 53736,
+              "rx_errors": 0,
+              "rx_dropped": 0,
+              "tx_bytes": 2831104,
+              "tx_packets": 53692,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "eth1",
+              "rx_bytes": 7802321488,
+              "rx_packets": 6514917,
+              "rx_errors": 0,
+              "rx_dropped": 233,
+              "tx_bytes": 1271392770,
+              "tx_packets": 6349170,
+              "tx_errors": 0
+            }
+          ],
+          "tx_dropped": 0,
+          "name": "eth0",
+          "rx_bytes": 1573011489,
+          "rx_packets": 898376,
+          "rx_errors": 0,
+          "rx_dropped": 4,
+          "tx_bytes": 12654081,
+          "tx_packets": 167992,
+          "tx_errors": 0
+        },
+        "memory": {
+          "hierarchical_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913031
+          },
+          "container_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913031
+          },
+          "failcnt": 0,
+          "working_set": 2040479744,
+          "swap": 0,
+          "rss": 21000192,
+          "cache": 319488000,
+          "usage": 3337158656
+        },
+        "diskio": {
+          "io_serviced": [
+            {
+              "stats": {
+                "Write": 15705337,
+                "Total": 15734094,
+                "Sync": 4388465,
+                "Read": 28757,
+                "Async": 11345629
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ],
+          "io_service_bytes": [
+            {
+              "stats": {
+                "Write": 84331958272,
+                "Total": 84649014272,
+                "Sync": 18005614592,
+                "Read": 317056000,
+                "Async": 66643399680
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ]
+        },
+        "cpu": {
+          "load_average": 0,
+          "cfs": {
+            "throttled_time": 0,
+            "throttled_periods": 0,
+            "periods": 0
+          },
+          "usage": {
+            "system": 1.0122935e+14,
+            "user": 7.471514e+13,
+            "per_cpu_usage": [
+              52478184578183,
+              49942921761265,
+              51225161832738,
+              49889684180073
+            ],
+            "total": 203535952352259
+          }
+        },
+        "timestamp": "2016-11-24T15:03:03.68106704Z"
+      },
+      {
+        "task_stats": {
+          "nr_io_wait": 0,
+          "nr_uninterruptible": 0,
+          "nr_stopped": 0,
+          "nr_running": 0,
+          "nr_sleeping": 0
+        },
+        "filesystem": [
+          {
+            "weighted_io_time": 0,
+            "io_time": 0,
+            "io_in_progress": 0,
+            "write_time": 0,
+            "inodes": 2621440,
+            "has_inodes": true,
+            "available": 30299033600,
+            "base_usage": 0,
+            "usage": 9677258752,
+            "capacity": 42140499968,
+            "type": "vfs",
+            "device": "/dev/vda1",
+            "inodes_free": 2471883,
+            "reads_completed": 0,
+            "reads_merged": 0,
+            "sectors_read": 0,
+            "read_time": 0,
+            "writes_completed": 0,
+            "writes_merged": 0,
+            "sectors_written": 0
+          }
+        ],
+        "network": {
+          "tcp6": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "tcp": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "interfaces": [
+            {
+              "tx_dropped": 0,
+              "name": "eth0",
+              "rx_bytes": 1573011957,
+              "rx_packets": 898385,
+              "rx_errors": 0,
+              "rx_dropped": 4,
+              "tx_bytes": 12654081,
+              "tx_packets": 167992,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "flannel0",
+              "rx_bytes": 2831809,
+              "rx_packets": 53736,
+              "rx_errors": 0,
+              "rx_dropped": 0,
+              "tx_bytes": 2831104,
+              "tx_packets": 53692,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "eth1",
+              "rx_bytes": 7802432143,
+              "rx_packets": 6515003,
+              "rx_errors": 0,
+              "rx_dropped": 233,
+              "tx_bytes": 1271411371,
+              "tx_packets": 6349256,
+              "tx_errors": 0
+            }
+          ],
+          "tx_dropped": 0,
+          "name": "eth0",
+          "rx_bytes": 1573011957,
+          "rx_packets": 898385,
+          "rx_errors": 0,
+          "rx_dropped": 4,
+          "tx_bytes": 12654081,
+          "tx_packets": 167992,
+          "tx_errors": 0
+        },
+        "memory": {
+          "hierarchical_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913032
+          },
+          "container_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913032
+          },
+          "failcnt": 0,
+          "working_set": 2040446976,
+          "swap": 0,
+          "rss": 21000192,
+          "cache": 319488000,
+          "usage": 3337142272
+        },
+        "diskio": {
+          "io_serviced": [
+            {
+              "stats": {
+                "Write": 15705684,
+                "Total": 15734441,
+                "Sync": 4388538,
+                "Read": 28757,
+                "Async": 11345903
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ],
+          "io_service_bytes": [
+            {
+              "stats": {
+                "Write": 84333670400,
+                "Total": 84650726400,
+                "Sync": 18005913600,
+                "Read": 317056000,
+                "Async": 66644812800
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ]
+        },
+        "cpu": {
+          "load_average": 0,
+          "cfs": {
+            "throttled_time": 0,
+            "throttled_periods": 0,
+            "periods": 0
+          },
+          "usage": {
+            "system": 1.012307e+14,
+            "user": 7.471617e+13,
+            "per_cpu_usage": [
+              52478753699949,
+              49943696566062,
+              51225782885481,
+              49890445855389
+            ],
+            "total": 203538679006881
+          }
+        },
+        "timestamp": "2016-11-24T15:03:22.471328206Z"
+      },
+      {
+        "task_stats": {
+          "nr_io_wait": 0,
+          "nr_uninterruptible": 0,
+          "nr_stopped": 0,
+          "nr_running": 0,
+          "nr_sleeping": 0
+        },
+        "filesystem": [
+          {
+            "weighted_io_time": 0,
+            "io_time": 0,
+            "io_in_progress": 0,
+            "write_time": 0,
+            "inodes": 2621440,
+            "has_inodes": true,
+            "available": 30290620416,
+            "base_usage": 0,
+            "usage": 9685671936,
+            "capacity": 42140499968,
+            "type": "vfs",
+            "device": "/dev/vda1",
+            "inodes_free": 2471883,
+            "reads_completed": 0,
+            "reads_merged": 0,
+            "sectors_read": 0,
+            "read_time": 0,
+            "writes_completed": 0,
+            "writes_merged": 0,
+            "sectors_written": 0
+          }
+        ],
+        "network": {
+          "tcp6": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "tcp": {
+            "Closing": 0,
+            "Listen": 0,
+            "LastAck": 0,
+            "Established": 0,
+            "SynSent": 0,
+            "SynRecv": 0,
+            "FinWait1": 0,
+            "FinWait2": 0,
+            "TimeWait": 0,
+            "Close": 0,
+            "CloseWait": 0
+          },
+          "interfaces": [
+            {
+              "tx_dropped": 0,
+              "name": "eth0",
+              "rx_bytes": 1573012477,
+              "rx_packets": 898395,
+              "rx_errors": 0,
+              "rx_dropped": 4,
+              "tx_bytes": 12654081,
+              "tx_packets": 167992,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "flannel0",
+              "rx_bytes": 2831861,
+              "rx_packets": 53737,
+              "rx_errors": 0,
+              "rx_dropped": 0,
+              "tx_bytes": 2831156,
+              "tx_packets": 53693,
+              "tx_errors": 0
+            },
+            {
+              "tx_dropped": 0,
+              "name": "eth1",
+              "rx_bytes": 7802545769,
+              "rx_packets": 6515097,
+              "rx_errors": 0,
+              "rx_dropped": 233,
+              "tx_bytes": 1271429585,
+              "tx_packets": 6349348,
+              "tx_errors": 0
+            }
+          ],
+          "tx_dropped": 0,
+          "name": "eth0",
+          "rx_bytes": 1573012477,
+          "rx_packets": 898395,
+          "rx_errors": 0,
+          "rx_dropped": 4,
+          "tx_bytes": 12654081,
+          "tx_packets": 167992,
+          "tx_errors": 0
+        },
+        "memory": {
+          "hierarchical_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913035
+          },
+          "container_data": {
+            "pgmajfault": 804,
+            "pgfault": 2913035
+          },
+          "failcnt": 0,
+          "working_set": 2040492032,
+          "swap": 0,
+          "rss": 21000192,
+          "cache": 319488000,
+          "usage": 3337256960
+        },
+        "diskio": {
+          "io_serviced": [
+            {
+              "stats": {
+                "Write": 15705745,
+                "Total": 15734502,
+                "Sync": 4388598,
+                "Read": 28757,
+                "Async": 11345904
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ],
+          "io_service_bytes": [
+            {
+              "stats": {
+                "Write": 84333920256,
+                "Total": 84650976256,
+                "Sync": 18006159360,
+                "Read": 317056000,
+                "Async": 66644816896
+              },
+              "minor": 0,
+              "major": 252
+            }
+          ]
+        },
+        "cpu": {
+          "load_average": 0,
+          "cfs": {
+            "throttled_time": 0,
+            "throttled_periods": 0,
+            "periods": 0
+          },
+          "usage": {
+            "system": 1.0123192e+14,
+            "user": 7.471708e+13,
+            "per_cpu_usage": [
+              52479428588555,
+              49944252407147,
+              51226477252629,
+              49890968982670
+            ],
+            "total": 203541127231001
+          }
+        },
+        "timestamp": "2016-11-24T15:03:40.999422292Z"
+      }
+    ],
+    "spec": {
+      "has_custom_metrics": false,
+      "creation_time": "2016-11-08T13:37:39.621Z",
+      "has_cpu": true,
+      "cpu": {
+        "period": 100000,
+        "mask": "0-3",
+        "max_limit": 0,
+        "limit": 1024
+      },
+      "has_memory": true,
+      "memory": {
+        "reservation": 9223372036854772000,
+        "limit": 4144578560
+      },
+      "has_network": true,
+      "has_filesystem": true,
+      "has_diskio": true
+    },
+    "subcontainers": [
+      {
+        "name": "/system.slice"
+      },
+      {
+        "name": "/user.slice"
+      }
+    ],
+    "name": "/"
+  }
+}
